@@ -2,4 +2,4 @@
 A React application that displays basic info about any country
 
 ## Demo
-Here the live (demo)[https://livio-country-app.herokuapp.com/]
+Try it out with the [demo](https://livio-country-app.herokuapp.com/)

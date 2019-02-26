@@ -14,13 +14,19 @@
 .results table:nth-child(1) {
   border-top: none;
 }
+.results table tbody .legendaRow {
+  font-weight: bold;
+}
+.results table tbody .infoRow {
+  cursor: context-menu;
+}
+.results table tbody .infoRow:hover {
+  background-color: #eee;
+}
 .results table td {
   width: 33%;
   padding: 8px;
   border-bottom: 1px solid black;
-}
-.results table .infoRow:hover {
-  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=index.css.map */

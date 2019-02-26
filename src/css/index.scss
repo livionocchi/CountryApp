@@ -15,14 +15,22 @@
       border-top: none;
     }
 
+    tbody {
+      .legendaRow {
+        font-weight: bold;
+      }
+      .infoRow {
+        cursor: context-menu;
+        &:hover {
+          background-color: #eee;
+        }
+      }
+    }
+
     td {
       width: 33%;
       padding: 8px;
       border-bottom: 1px solid black;
-    }
-
-    .infoRow:hover {
-      background-color: #ffffff;
     }
   }
 }

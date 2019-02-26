@@ -21,34 +21,30 @@ class Country extends Component {
       return countries.default.map((c) => {
         if (c.name.includes(countryName)) {
           return (
-            <table>
-              <tr>
-                <td>
-                  <h4>country</h4>
-                </td>
-                <td>
-                  <h4>capital</h4>
-                </td>
-                <td>
-                  <h4>region</h4>
-                </td>
-              </tr>
-              <tr class='infoRow'>
-                <td>{ c.name }</td>
-                <td>{ c.capital }</td>
-                <td>{ c.region }</td>
-              </tr>
+            <table key={ c.name }>
+              <tbody>
+                <tr className='legendaRow'>
+                  <td>country</td>
+                  <td>capital</td>
+                  <td>region</td>
+                </tr>
+                <tr className='infoRow'>
+                  <td>{ c.name }</td>
+                  <td>{ c.capital }</td>
+                  <td>{ c.region }</td>
+                </tr>
 
-              <tr>
-                <td><h4>tld</h4></td>
-                <td><h4>calling code</h4></td>
-                <td><h4>native name</h4></td>
-              </tr>
-              <tr class='infoRow'>
-                <td>{ c.topLevelDomain }</td>
-                <td>{ c.callingCodes }</td>
-                <td>{ c.nativeName }</td>
-              </tr>
+                <tr className='legendaRow'>
+                  <td>tld</td>
+                  <td>calling code</td>
+                  <td>native name</td>
+                </tr>
+                <tr className='infoRow'>
+                  <td>{ c.topLevelDomain }</td>
+                  <td>+{ c.callingCodes }</td>
+                  <td>{ c.nativeName }</td>
+                </tr>
+              </tbody>
             </table>
           );
         };
